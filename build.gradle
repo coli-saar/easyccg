@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+    maven {url 'https://maven.aksw.org/repository/internal/'}
+    maven {url 'https://cogcomp.seas.upenn.edu/m2repo/'}
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/edu.mit/jwi
+    implementation 'edu.mit:jwi:2.3.3'
+
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation 'com.google.guava:guava:15.0'
+
+    // https://mvnrepository.com/artifact/com.lexicalscope.jewelcli/jewelcli
+    implementation 'com.lexicalscope.jewelcli:jewelcli:0.7.6'
+
+    // https://mvnrepository.com/artifact/no.uib.cipr.matrix/mtj
+    implementation 'no.uib.cipr.matrix:mtj:0.9.12'
+}
+
